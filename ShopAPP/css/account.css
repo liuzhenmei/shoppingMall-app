@@ -1,0 +1,243 @@
+/*body{
+	 background:url("../img/abg.png") no-repeat;
+ background-size:100% 100%;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/abg.png',sizingMethod='scale');
+}*/
+
+.separation_line{
+	height:12.5px;background:#f5f5f5
+}
+.accountName{
+	height:3.1rem;
+	background: -webkit-linear-gradient(left, #FE9603 , #FF6948); 
+  background: -o-linear-gradient(right, #FE9603 , #FF6948);
+  background: -moz-linear-gradient(right, #FE9603 , #FF6948);
+  background: linear-gradient(to right, #FE9603 , #FF6948);
+/*background:#ff8a00;*/
+  
+ display:flex;
+ display:-webkit-flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ }
+ .myInfo{  
+ 	text-align:center;
+ 	padding-top:30px;
+ }
+  .myInfo p{
+  	color:#ffffff;
+  	font-size:18px;
+  }
+  .headPhoto {
+  	position:relative;
+  	display:inline-block;
+  }
+.headPhoto img{
+	width:1.37rem;
+	height:1.37rem;
+	border-radius:50%;
+	border:2px solid #ffffff;
+}
+.headPhoto i{
+	width:19px;
+	line-height:19px;
+	border-radius:50%;
+	background:#ffffff;
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	font-size:12px;
+	color:#7b7b7b;
+}
+.accountInfo ul .mui-table-view-cell{
+	padding:16px 15px;
+}
+.accountInfo ul .mui-table-view-cell>a:not(.mui-btn){
+	margin:-16px -15px;
+	font-size:18px;
+	color:#333333;
+}
+.accountInfo ul .mui-table-view-cell:after{
+	background-color:#EBEBEB;
+	left:0;
+}
+.accountInfo .mui-table-view:after{
+	background-color:#EBEBEB;
+}
+.accountInfo .mui-table-view:before{
+	background-color:transparent;
+}
+
+ul.OrderStatus{
+	list-style: none;
+	background:#ffffff;
+	padding:0;
+	margin-top:0;
+	margin-bottom:10px;
+}
+ul.OrderStatus:after{
+	content:"";
+	display:block;
+	clear:both;
+	
+}
+ul.OrderStatus li{
+	float:left;
+	
+	border:1px solid #EBEBEB;
+	border-right:none;
+	border-top:none;
+}
+ul.OrderStatus li a{
+	padding:15px;
+	color:#333333;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+}
+ul.OrderStatus li a>span{
+    font-size:20px;
+	color:#606060;
+	margin-right:15px;
+	position:relative;
+}
+.num{
+	top: -10px;
+	right:-10px;
+	position: absolute;
+	background-color: #D80000;
+	color: #ffffff;
+	
+}
+ul.otherPage>li>a{
+	font-size:16px!important;
+}
+.otherPage li a i{
+	color:#7b7b7b;
+	font-size:20px;
+	margin-right:10px;
+}
+
+.signOut{
+	padding:18px 1.2rem;
+}
+
+.signOut button{
+	border:none;
+	padding:0;
+	background:#ffffff;
+	color:#333333;
+	width:100%;
+	line-height:42px;
+	text-align:center;
+	font-size:16px;
+}
+
+#backs {
+	color: #666666;
+	font-size: 20px;
+	line-height:50px;
+	
+}
+.pageHead{
+	height:50px;
+	border-bottom:#EBEBEB solid 1px;
+	box-shadow:none;
+	background:#ffffff;
+
+}
+.pageHead h1{
+	font-weight:bold;
+	line-height:50px;
+}
+
+/*personalInfo*/
+
+ul.otherPage>li>a>span,ul.otherPage>li>a>select{
+	display:block;
+	position:absolute;
+	top:50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	right:40px;
+	color:#878787;
+}
+span.yourImage{
+	right:40px!important;
+}
+span.yourImage img{
+	width:58px;
+	height:58px;
+}
+span.myEmail{
+	right:15px!important;
+}
+select.gender{
+	margin-top:0;
+	margin-bottom:0;
+	width:auto;
+	right:15px!important;
+	font-size:16px;
+}
+
+
+/*modifyPwd*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: #CCCCCC;
+ }
+input:-moz-placeholder, textarea:-moz-placeholder {
+color:#CCCCCC;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+color:#CCCCCC;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+color:#CCCCCC;
+}
+.formDiv{
+	margin-top:12.5px;
+}
+.formDiv.mui-input-group:before,.formDiv.mui-input-group:after{
+	background-color:transparent;
+}
+
+.formDiv .mui-input-row:after{
+	left:0;
+	background-color:#EBEBEB;
+}
+.formDiv .mui-input-row{
+	height:58px;
+}
+.formDiv .mui-input-row label{
+	padding:20px 15px;
+	color:#999999;
+	font-size:14px;
+	
+}
+.formDiv .mui-input-row input,.formDiv .mui-input-row select{
+	height:58px;
+	font-size:16px;
+
+}
+ .formDiv .mui-input-row .mui-input-clear~.mui-icon-clear{
+	top:19px;
+	
+}
+.savePwd{
+	padding:54px 15px 0 15px;
+}
+.savePwd button{
+	border:none;
+	width:100%;
+	padding:0;
+	color:#ffffff;
+	background:#FF8A00;
+	font-size:19px;
+	line-height:48px;
+	margin-right:-15px;
+	border-radius:8px;
+	
+}

@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/detail.css" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<script type="text/javascript" src="iconfont/iconfont.js"></script>
+		<style>
+			.icon {
+				width: 18px;
+				height: 17px;
+			}
+			
+			body {
+				font-family: arial;
+				background-color: #ffffff;
+			}
+			
+			.mui-content {
+				background-color: #ffffff;
+			}
+			
+			#back {
+				color: #666666;
+				font-size: 20px;
+				margin-top: 15px;
+			}
+			
+			.cartHead {
+				height: 50px;
+				border-bottom: #EBEBEB solid 1px;
+				box-shadow: none;
+				background: #ffffff;
+			}
+			
+			.cartHead h1 {
+				font-weight: bold;
+				line-height: 50px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav cartHead">
+			<a class="mui-action-back iconfont icon-right mui-pull-left" id="back"></a>
+			<h1 class="mui-title">All Reviews</h1>
+		</header>
+		<div class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--这里放置真实显示的DOM内容-->
+				<div class="reviewsList">
+					<div class="mui-card">
+						<!--页眉，放置标题-->
+						<div class="mui-card-header mui-card-media">
+							<img src="img/pic (1).png" />
+							<div class="mui-media-body">
+								M
+								<p>2018-08-20 20:30:15</p>
+							</div>
+							<div class="star">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-star-on"></use>
+								</svg>
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-star-on"></use>
+								</svg>
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-star-on"></use>
+								</svg>
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-star-on"></use>
+								</svg>
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-star-half"></use>
+								</svg>
+							</div>
+						</div>
+						<!--内容区-->
+						<div class="mui-card-content">
+							<p>imverey happy with these ultra small voltmeters.will recommend.</p>
+							<div class="c-img">
+								<img src="img/pic (5).png"><img src="img/pic (6).png">
+							</div>
+						</div>
+						<!--页脚，放置补充信息或支持的操作-->
+						<div class="mui-card-footer">
+							<div class="zan"><i class="iconfont icon-dianzan"></i> <span>0</span></div>
+						</div>
+					</div>
+					<div class="mui-card">
+						<!--页眉，放置标题-->
+						<div class="mui-card-header mui-card-media">
+							<img src="img/pic (1).png" />
+							<div class="mui-media-body">
+								M
+								<p>2018-08-20 20:30:15</p>
+							</div>
+							<div class="star">
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-star-on"></use>
+								</svg>
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-star-on"></use>
+								</svg>
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-star-on"></use>
+								</svg>
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-star-on"></use>
+								</svg>
+								<svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-star-half"></use>
+								</svg>
+							</div>
+						</div>
+						<!--内容区-->
+						<div class="mui-card-content">
+							<p>imverey happy with these ultra small voltmeters.will recommend.</p>
+							<div class="c-img">
+								<img src="img/pic (5).png"><img src="img/pic (6).png">
+							</div>
+						</div>
+						<!--页脚，放置补充信息或支持的操作-->
+						<div class="mui-card-footer">
+							<div class="zan"><i class="iconfont icon-dianzan"></i> <span>0</span></div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/mui.min.js"></script>
+		
+		<script type="text/javascript">
+			mui.init();
+			//设置html的字体大小
+           document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+			//区域滚动初始化scroll控件
+			mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+				bounce: false, //滚动条是否有弹力默认是true
+			});
+		</script>
+	</body>
+
+</html>

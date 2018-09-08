@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/account.css" />
+		<style>
+			
+			body{
+				font-family: arial;
+				background-color:#ffffff;
+			}
+			
+			.mui-content{
+				background-color:#ffffff;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav pageHead">
+		    <a class="mui-action-back iconfont icon-right mui-pull-left" id="backs"></a>
+		    <h1 class="mui-title">Personal Data</h1>
+		</header>
+		<div class="mui-content mui-scroll-wrapper">
+		    <div class="mui-scroll">
+		    	<div class="accountInfo">
+		    		<div class="separation_line"></div>
+		    		<ul class="mui-table-view otherPage">
+						<li class="mui-table-view-cell" style="padding:26px 15px;">
+							<a class="mui-navigate-right" style="padding:-26px -15px;" id="head">
+							 Your Image<span class="yourImage"><img src="img/pic (1).png" id="head-img1"></span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a>
+								Email<span class="myEmail">15013600866@163.com</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+							 Gender<select class="gender"><option>Male</option><option>Female</option></select>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" id="yourName">
+							 Name<span id="name">M</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" id="mobilePhone">
+							 Mobile Phone<span id="phoneNumber">13684930882</span>
+							</a>
+						</li>
+					</ul>
+		    		
+		    	</div>
+		    	
+		    	
+		    </div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			
+			//更换头像
+		mui(".mui-table-view-cell").on("tap", "#head", function(e) {
+			if(mui.os.plus){
+				var a = [{
+					title: "Take a photo"
+				}, {
+					title: "Choose from album"
+				}];
+				plus.nativeUI.actionSheet({
+					title: "Modify avatar",
+					cancel: "Cancel",
+					buttons: a
+				}, function(b) {
+					switch (b.index) {
+						case 0:
+							break;
+						case 1:
+							getImage();
+							break;
+						case 2:
+							galleryImg();
+							break;
+						default:
+							break
+					}
+				})	
+			}
+			
+		});
+
+		function getImage() {
+			var c = plus.camera.getCamera();
+			c.captureImage(function(e) {
+				plus.io.resolveLocalFileSystemURL(e, function(entry) {
+					var s = entry.toLocalURL() + "?version=" + new Date().getTime();
+					console.log(s);
+					//document.getElementById("head-img").src = s;
+					document.getElementById("head-img1").src = s;
+					//变更大图预览的src
+					//目前仅有一张图片，暂时如此处理，后续需要通过标准组件实现
+					//document.querySelector("#__mui-imageview__group .mui-slider-item img").src = s + "?version=" + new Date().getTime();;;
+				}, function(e) {
+					console.log("读取拍照文件错误：" + e.message);
+				});
+			}, function(s) {
+				console.log("error" + s);
+			}, {
+				filename: "_doc/head.jpg"
+			})
+		}
+
+		function galleryImg() {
+			plus.gallery.pick(function(a) {
+				plus.io.resolveLocalFileSystemURL(a, function(entry) {
+					plus.io.resolveLocalFileSystemURL("_doc/", function(root) {
+						root.getFile("head.jpg", {}, function(file) {
+							//文件已存在
+							file.remove(function() {
+								console.log("file remove success");
+								entry.copyTo(root, 'head.jpg', function(e) {
+										var e = e.fullPath + "?version=" + new Date().getTime();
+										//document.getElementById("head-img").src = e;
+										document.getElementById("head-img1").src = e;
+										//变更大图预览的src
+										//目前仅有一张图片，暂时如此处理，后续需要通过标准组件实现
+										//document.querySelector("#__mui-imageview__group .mui-slider-item img").src = e + "?version=" + new Date().getTime();;
+									},
+									function(e) {
+										console.log('copy image fail:' + e.message);
+									});
+							}, function() {
+								console.log("delete image fail:" + e.message);
+							});
+						}, function() {
+							//文件不存在
+							entry.copyTo(root, 'head.jpg', function(e) {
+									var path = e.fullPath + "?version=" + new Date().getTime();
+									//document.getElementById("head-img").src = path;
+									document.getElementById("head-img1").src = path;
+									//变更大图预览的src
+									//目前仅有一张图片，暂时如此处理，后续需要通过标准组件实现
+									document.querySelector("#__mui-imageview__group .mui-slider-item img").src = path;
+								},
+								function(e) {
+									console.log('copy image fail:' + e.message);
+								});
+						});
+					}, function(e) {
+						console.log("get _www folder fail");
+					})
+				}, function(e) {
+					console.log("读取拍照文件错误：" + e.message);
+				});
+			}, function(a) {}, {
+				filter: "image"
+			})
+		};
+
+		function defaultImg() {
+			if(mui.os.plus){
+				plus.io.resolveLocalFileSystemURL("_doc/head.jpg", function(entry) {
+					var s = entry.fullPath + "?version=" + new Date().getTime();;
+					//document.getElementById("head-img").src = s;
+					document.getElementById("head-img1").src = s;
+				}, function(e) {
+					//document.getElementById("head-img").src = '../img/pic (1).png';
+					document.getElementById("head-img1").src = '../img/pic (1).png';
+				})
+			}else{
+				//document.getElementById("head-img").src = '../img/pic (1).png';
+				document.getElementById("head-img1").src = '../img/pic (1).png';
+			}
+			
+		}
+			
+		mui(".mui-table-view-cell").on("tap", "#yourName", function() {
+			
+			mui.openWindow({
+					  url: "changeProfile.html",
+					  id: "changeProfile",
+					  extras:{
+								titleName:'Change Name',  //扩展参数
+								content:document.getElementById("name").innerText
+							}	  
+			 })
+		})
+		mui(".mui-table-view-cell").on("tap", "#mobilePhone", function() {
+			
+			mui.openWindow({
+					  url: "changeProfile.html",
+					  id: "changeProfile",
+					  extras:{
+								titleName:'Change MobilePhone',  //扩展参数
+								content:document.getElementById("phoneNumber").innerText
+							}	  
+			 })
+		})	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</script>
+	</body>
+
+</html>

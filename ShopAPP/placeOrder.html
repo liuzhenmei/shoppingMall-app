@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<script type="text/javascript" src="iconfont/iconfont.js" ></script>
+		<link rel="stylesheet" href="css/cart.css" />
+		<style>
+			.balance{
+				border-bottom:none;
+				padding-right:0;
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav cartHead">
+		    <a class="mui-action-back iconfont icon-right mui-pull-left" id="back" style="display:block"></a>
+		    <h1 class="mui-title">Place Order</h1>
+		</header>
+		<div class="mui-content mui-scroll-wrapper">
+		    <div class="mui-scroll">
+		        <!--这里放置真实显示的DOM内容-->
+		        <div class="po_title"><i class="iconfont icon-dizhi" style="font-size:30px;"></i><h1>Shipping Address</h1></div>
+		        <div class="addAddress" id="addAddress"><h1>Please add your shipping Address</h1><i class="iconfont icon-qianjin-copy"></i></div>
+		        <div class="addressbg"></div>
+		        <div class="po_title"><i class="iconfont icon-kuaidi" style="font-size:20px;"></i><h1>Shipping Details</h1></div>
+		        
+		        <div class="order_itemProduct">
+		        	<div class="cart_proInfo">
+		         	 <div class="cartImg"><img src="img/pic (4).png"></div>
+		         	 <div class="pInfo">
+		         	 	<div class="cPname"><a href="#">PU Leather School Bag Laptop Backpack Travel</a></div>
+		         	 	<div class="price_num">
+		         	 		<div class="cprice">$39.9<span>X1</span></div>
+		         	 	</div>	
+		         	 </div>
+		         </div>
+		         <div class="cart_proInfo">
+		         	 <div class="cartImg"><img src="img/pic (8).png"></div>
+		         	 <div class="pInfo">
+		         	 	<div class="cPname"><a href="#">PU Leather School Bag Laptop Backpack Travel</a></div>
+		         	 	<div class="price_num">
+		         	 		<div class="cprice">$39.9<span>X1</span></div>
+		         	 	</div>	
+		         	 </div>
+		         </div>
+		        </div>
+		        
+		        <div class="po_title"><i class="iconfont icon-yinhangqia" style="font-size:30px;"></i><h1>Payment Method</h1></div>
+		        <div class="mui-input-row mui-checkbox ">
+		            <label style="padding:15px;border-bottom:1px solid #EBEBEB;"><span class="paypal">
+		            	<svg class="icon" aria-hidden="true" style="width:33px;height:30px;">
+                         <use xlink:href="#icon-Paypal"></use>
+                     </svg>
+		            </span></label>
+		            <input name="Checkbox" type="checkbox" checked style="margin-top:18px;" disabled>
+		        </div>
+		        <div class="separation_line"></div>
+		         <div class="po_title"><i class="iconfont icon-dingdan" style="font-size:30px;"></i><h1>Order Total</h1></div>
+		         <div class="moneyPlate">
+		         	<div class="money_item"><div class="item-title">Order subtotal:</div><div class="count_num">$64.8</div></div>
+		        	<div class="money_item"><div class="item-title">Shipping Fee:</div><div class="count_num ship_fee">FreeShipping</div></div>
+		        	<div class="money_item"><div class="item-title" style="color:#D80000">Grand Total:</div><div class="count_num OrderTotal">$64.8</div></div>
+		        </div>
+		        <div class="mcafee">
+		        	<div class="mcafeeImg"><svg class="icon" aria-hidden="true" style="width:150px;height:50px;">
+                         <use xlink:href="#icon-mcafeesecure"></use>
+                     </svg></div>
+                     <div class="textIntro">Your information is protected and safe at all time</div>
+		        	
+		        </div>
+		    </div>
+		    
+		    
+		</div>
+		 <div class="balance">
+		   	    <div class="finallyPrice">$64.80</div>
+		   	    <div class="placeOrder"><button type="button">Place Order</button></div>
+		   	
+		
+		     </div>
+		
+	<script src="js/jquery.js"></script>
+		<script src="js/mui.min.js"></script>
+	
+		
+		<script type="text/javascript">
+			mui.init()
+			//设置html的字体大小
+ document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+				//区域滚动初始化scroll控件
+	mui('.mui-scroll-wrapper').scroll({
+		deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		bounce: false,//滚动条是否有弹力默认是true
+	});
+	document.getElementById("addAddress").addEventListener("tap",function(){
+		
+		mui.openWindow({
+			url:"addressList.html",
+			id:"addressList"
+		})
+	})
+		</script>
+	</body>
+
+</html>

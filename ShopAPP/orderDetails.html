@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/cart.css" />
+		<style>
+			.order_itemProduct .cart_proInfo{
+				border-bottom:none;
+			}
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav cartHead">
+			<a class="mui-action-back iconfont icon-right mui-pull-left" id="back" style="display:block"></a>
+			<h1 class="mui-title">Order Details</h1>
+		</header>
+		<div class="mui-content mui-scroll-wrapper" style="padding-bottom:0;">
+		    <div class="mui-scroll">
+		        <!--这里放置真实显示的DOM内容-->
+		        <div class="separation_line"></div>
+		        <div class="orderInfo">
+		        <div class="addAddress" id="addAddress">
+		        	<div class="defaultAddress">
+			        	<div class="name_phone"><span >Shan,Su </span><span class="receipt_phone">+001-15013600889</span></div>
+			        	<div class="receipt_address">United States,Unitde StatesAngola,Bengo,United States Angola</div>
+			        	<span class="iconfont icon-dizhi" id="dizhi_icon"></span>
+		        	</div>
+		        	
+		        </div>
+		        <div class="addressbg"></div>
+		        <div class="separation_line"></div>
+		        <div class="order_itemProduct">
+		        	<div class="cart_proInfo">
+		         	 <div class="cartImg"><img src="img/pic (4).png"></div>
+		         	 <div class="pInfo">
+		         	 	<div class="cPname"><a href="#">PU Leather School Bag Laptop Backpack Travel</a></div>
+		         	 	<div class="price_num">
+		         	 		<div class="cprice">$39.9<span>X1</span></div>
+		         	 	</div>	
+		         	 </div>
+		            </div>
+		            <div class="cart_proInfo">
+		         	 <div class="cartImg"><img src="img/pic (3).png"></div>
+		         	 <div class="pInfo">
+		         	 	<div class="cPname"><a href="#">PU Leather School Bag Laptop Backpack Travel</a></div>
+		         	 	<div class="price_num">
+		         	 		<div class="cprice">$39.9<span>X1</span></div>
+		         	 	</div>	
+		         	 </div>
+		            </div>
+		        </div>
+		        <div class="calculate_price" style="color:#999999"><div>Commodity price</div><div>$79.8 </div> </div>
+		        <div class="calculate_price" style="color:#999999"><div>Freight </div><div>0.00</div></div>
+		        <div class="calculate_price"><div>Total order price</div><div> $79.8</div></div>
+		        <div class="calculate_price" style="border-top:1px solid #EBEBEB;padding:10px 15px;">
+		        	<div>Actually paid</div><div style="color:#D80000"> $79.8</div>
+		        </div>
+		        <div class="separation_line"></div>
+		        <div class="orderinformation">
+		             <h4>Order Information</h4>
+		             <div class="infolist">
+		             	<ul>
+		             		<li>Order number:12345678998569871</li>
+							<li>Paypal transaction number: 12356897425832133</li>
+							<li>Creation time: 8/20/18 11:59:60 AM</li>
+							<li>Payment time: 8/20/18 12:25:60 AM</li>
+							<li>Delivery time: 8/20/18 16:30:60 AM</li>
+		             	</ul>
+		             	
+		             	<button type="button" class="copy" id="copyBtn" data-clipboard-text="12345678998569871">Copy</button>
+		             </div>
+		             <div class="oprationBtn"><a class="btn1">Cancel</a><a href="#" class="btn2">Payment</a></div>
+		        </div>
+		        
+		        
+		     </div>
+		        
+		
+		    </div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript" src="js/clipboard.min.js" ></script>
+		<script src="js/mui.min.js"></script>
+		
+		<script type="text/javascript">
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+			mui.init()
+			mui('.mui-scroll-wrapper').scroll({
+		deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		bounce: false,//滚动条是否有弹力默认是true
+	});
+	
+		
+		// 将内容复制到剪贴板
+		var btn = document.getElementById('copyBtn');
+        var clipboard = new ClipboardJS(btn);
+       clipboard.on('success', function(e) {
+		    console.info('Action:', e.action);
+		    console.info('Text:', e.text);
+		    console.info('Trigger:', e.trigger);
+		mui.toast('Successful copy!',{ duration:'long', type:'div' })
+		   e.clearSelection();
+		});
+		   
+		clipboard.on('error', function(e) {   
+		    console.error('Action:', e.action);
+		    console.error('Trigger:', e.trigger);
+		});
+  
+	
+	 
+		</script>
+	</body>
+
+</html>

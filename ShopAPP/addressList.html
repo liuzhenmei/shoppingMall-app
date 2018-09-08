@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/cart.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav cartHead">
+		    <a class="mui-action-back iconfont icon-right mui-pull-left" id="back" style="display:block"></a>
+		    <h1 class="mui-title">Address List</h1>
+		</header>
+		<div class="mui-content mui-scroll-wrapper" style="background:#F5F5F5;">
+		    <div class="mui-scroll">
+		    	<div class="myAddressList">
+		    		<div class="myAddress">
+		    			<ul>
+			    			<li class="myName">Shan,Su  </li>
+				    		<li class="address">United States,Unitde States Angola,Bengo,United States</li>
+				    		<li class="mobilePhone">Mobile Phone:2121264644</li>
+				    		<li class="emailAddress">Email:15013600889@163.com</li>
+		    			</ul>
+		    			<div class="default">
+		    				<div class="mui-input-row mui-radio mui-left">
+		    					
+								<input name="radio1" type="radio" checked >
+								<label>Default</label>
+							</div> 
+		    				<div class="editAddress"><i class="iconfont icon-bianji"></i></div>
+		    			</div>
+		    			
+		    		</div>
+		    		<div class="myAddress">
+		    			<ul>
+			    			<li class="myName">Shan,Su  </li>
+				    		<li class="address">United States,Unitde States Angola,Bengo,United States</li>
+				    		<li class="mobilePhone">Mobile Phone:2121264644</li>
+				    		<li class="emailAddress">Email:15013600889@163.com</li>
+		    			</ul>
+		    			<div class="default">
+		    				<div class="mui-input-row mui-radio mui-left">
+								<input name="radio1" type="radio">
+								<label>Default</label>
+							</div>
+		    				<div class="editAddress"><i class="iconfont icon-bianji"></i></div>
+		    			</div>
+		    			
+		    		</div>
+		    		
+		    	</div>
+		    	
+		    	
+		    	
+		    </div>
+		</div>
+		<div class="balance addlist">
+		   	<button type="button" id="addNewAddress">Add a New Address</button>
+		   	
+		
+		   </div>
+		
+		
+		
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+						//区域滚动初始化scroll控件
+	mui('.mui-scroll-wrapper').scroll({
+		deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		bounce: false,//滚动条是否有弹力默认是true
+	});
+	document.getElementById("addNewAddress").addEventListener("tap",function(){
+		
+		mui.openWindow({
+			url:"addAddress.html",
+			id:"addAddress"
+		})
+	})
+		</script>
+	</body>
+
+</html>

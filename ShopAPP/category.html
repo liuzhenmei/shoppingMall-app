@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/category.css" />
+		<style>
+			
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="mui-content mui-row mui-fullscreen" style="margin-top:0.26rem">
+			<div class="mui-col-xs-3">
+				<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+				</div>
+			</div>
+			<div id="segmentedControlContents" class="mui-col-xs-9">
+				<div id="item1" class="mui-control-content mui-active">
+				</div>
+				<div id="item2" class="mui-control-content">
+				</div>
+				<div id="item3" class="mui-control-content">
+				</div>
+			</div>
+		
+	    <script src="js/jquery.js"></script>
+		<script src="js/mui.min.js"></script>
+		
+		<script type="text/javascript" src="js/sub.js" ></script>
+		<script>
+			mui.init()
+			//设置html的字体大小
+ document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+			var controls = document.getElementById("segmentedControls");
+			var contents = document.getElementById("segmentedControlContents");
+			var html = [];
+			var i = 0,
+				j = 0,
+				m = ["Luggage","Festival  celebration","Women's  jewelry","Men's jewelry","Pet life","Outdoor sport","Toy instrument"], //左侧选项卡数量+1
+				n = 21; //每个选项卡列表数量+1
+			for (; i < m.length; i++) {
+				html.push('<a class="mui-control-item" href="#content' + i + '">' + m[i] + '</a>');
+			}
+			controls.innerHTML = html.join('');
+			html = [];
+			for (i = 0; i < m.length; i++) {
+				html.push('<div id="content' + i + '" class="mui-control-content"><ul class="mui-table-view">');
+				for (j = 0; j < n; j++) {
+					html.push('<li class="mui-table-view-cell" data-id="content'+i+'-'+j+'"><div class="cImg"><img src="img/category.png"></div><div class="cName">Backpackasd sfdgfhgjhk dfgfhfghgjh</div></li>');
+				}
+				html.push('</ul></div>');
+			}
+			contents.innerHTML = html.join('');
+			 //默认选中第一个
+			controls.querySelector('.mui-control-item').classList.add('mui-active');
+			contents.querySelector('.mui-control-content').classList.add('mui-active');
+			
+			mui.plusReady(function(){
+	//预加载产品列表页面
+	var productPage = null;
+productPage = mui.preload({
+     url:"showProducts.html",
+     id:"showProducts.html"
+     //默认使用当前页面的url作为id
+});
+//添加列表项的点击事件
+mui('#segmentedControlContents').on('tap', 'ul li', function(e) {
+  var id = this.getAttribute('data-id');
+ 
+  //触发产品列表页面的categoryId事件
+  mui.fire(productPage,'categoryId',{
+    id:id
+  });
+//打开产品列表页面       
+  mui.openWindow({
+    id:'showProducts.html'
+  });
+  
+ // console.log(id)
+});
+})
+			
+			
+			
+			
+			
+			
+		</script>
+	</body>
+
+</html>

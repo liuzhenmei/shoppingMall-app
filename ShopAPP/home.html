@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		
+		
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/home.css" />
+		<style>
+			.mui-slider-indicator .mui-indicator {
+				margin: 1px 2px;
+			}
+
+		</style>
+		
+	</head>
+	<body>
+		
+		<!-- 主页面内容容器 -->
+		<div class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!-- 主界面具体展示内容 -->
+				<!--轮播-->
+				<div id="slider" class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/banner.png">
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/banner.png">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/banner.png">
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/banner.png">
+							</a>
+						</div>
+						<!-- 第四张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/banner.png">
+							</a>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/banner.png">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+
+				<!--九宫格-->
+				<div class="ourItem">
+
+					<ul class="mui-table-view mui-grid-view mui-grid-9" id="ourItems">
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" >
+							<a href="javascript:;" data-id="1">
+								<span class="mui-icon iconfont icon-red" id="hot"></span>
+								<div class="mui-media-body">what’s Hot</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+							<a href="javascript:;" data-id="2">
+								<span class="mui-icon iconfont icon-xinpin" id="new"></span>
+								<div class="mui-media-body">New</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+							<a href="javascript:;" data-id="3">
+								<span class="mui-icon iconfont icon-shandian" id="flash"></span>
+								<div class="mui-media-body">Flash Deals</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+							<a href="javascript:;" data-id="4">
+								<span class="mui-icon iconfont icon-sale" id="promotion"></span>
+								<div class="mui-media-body">Promotion Sale </div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+							<a href="javascript:;" data-id="5">
+								<span class="mui-icon iconfont icon-baobao" id="luggage"></span>
+								<div class="mui-media-body">Luggage</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+							<a href="javascript:;" data-id="6">
+								<span class="mui-icon iconfont icon-wanju" id="toy"></span>
+								<div class="mui-media-body">Toy</div>
+							</a>
+						</li>
+
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+							<a href="javascript:;" data-id="7">
+								<span class="mui-icon iconfont icon-shouye-jieri" id="festival"></span>
+								<div class="mui-media-body">Festival</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+							<a href="javascript:;" data-id="8">
+								<span class="mui-icon iconfont icon-huwai" id="outdoor"></span>
+								<div class="mui-media-body">Outdoor s... </div>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<!--advertising-->
+				<div class="advertisingBanner">
+					<a href="#"><img src="img/adv.png"></a>
+				</div>
+                <!--Flash Deals-->
+                <div class="flashDeals">
+                	<div class="plate-title">
+                		<h4>Flash Deals</h4>
+                		<a href="#" class="more">More <i class="iconfont icon-qianjin-copy"></i></a>
+                	</div>
+                	<div class="productList">
+                	
+                			<div class="product">
+                				<a href="detail.html" class="thumbnail"><img src="img/pic (4).png"></a>
+                				<div class="name_price">
+                				<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack Travel...</a></div>
+                				<div class="price">$39.9</div>
+                				</div>
+                			</div>
+                		
+                			<div class="product">
+                				<a href="detail.html" class="thumbnail"><img src="img/pic (3).png"></a>
+                				<div class="name_price">
+                				<div class="productName"><a href="detail.html">Unmanned  Aircraft pre...</a></div>
+                				<div class="price">$19.9</div>
+                				</div>
+                			</div>
+                			<div class="product">
+                				<a href="detail.html" class="thumbnail"><img src="img/pic (5).png"></a>
+                				<div class="name_price">
+                				<div class="productName"><a href="detail.html">Unmanned  Aircraft pre...</a></div>
+                				<div class="price">$19.9</div>
+                				</div>
+                			</div>
+                			<div class="product">
+                				<a href="detail.html" class="thumbnail"><img src="img/pic (6).png"></a>
+                				<div class="name_price">
+                				<div class="productName"><a href="detail.html">Unmanned  Aircraft pre...</a></div>
+                				<div class="price">$19.9</div>
+                				</div>
+                			</div>
+                		
+                	</div>
+                </div>
+                <!--Recommendations-->
+                <div class="recommend">
+                	<div class="plate-title">
+                		<h4>Recommendations</h4>
+                		<!--<a href="#" class="moreList"><i class="iconfont icon-liebiao"></i></a>-->
+                	</div>
+                	<div class="productList plist">
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (1).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack Travel</a></div>
+                			<div class="price">$12.9</div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (2).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack Travel</a></div>
+                			<div class="price">$19.9</div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (7).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpacksfsdfdgdfgf</a></div>
+                			<div class="price">$7.9</div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (8).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack TravelTravel</a></div>
+                			<div class="price">$28.9</div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (9).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack TravelTravel</a></div>
+                			<div class="price">$5.9</div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (10).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="">PU Leather School Bag Laptop Backpack Travel</a></div>
+                			<div class="price">$8.9</div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (11).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack TravelTravel</a></div>
+                			<div class="price">$15.9</div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (12).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack Travel</a></div>
+                			<div class="price">$20.9</div>
+                			</div>
+                		</div>
+                	</div>
+                </div>
+
+
+			</div>
+
+		</div>
+		
+	<script src="js/jquery.js"></script>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/sub.js" ></script>
+	<script>
+		mui.init();
+		//设置html的字体大小
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+		//获得slider插件对象
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+			interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
+		});
+			
+			//区域滚动初始化scroll控件
+		mui('.mui-scroll-wrapper').scroll({
+			deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+			bounce: false,//滚动条是否有弹力默认是true
+		});
+
+	mui('.productList').on('tap','.product',function(){
+//	window.location.href=this.href;
+		mui.openWindow({
+		 			url: "detail.html",
+		 			id: "detail"
+		 		})
+		 });	
+	
+
+
+mui.plusReady(function(){
+	//预加载产品列表页面
+	var productPage = null;
+productPage = mui.preload({
+     url:"showProducts.html",
+     id:"showProducts.html"
+     //默认使用当前页面的url作为id
+});
+//添加列表项的点击事件
+mui('#ourItems').on('tap', 'li a', function(e) {
+  var id = this.getAttribute('data-id');
+ 
+  //触发产品列表页面的categoryId事件
+  mui.fire(productPage,'categoryId',{
+    id:id
+  });
+//打开产品列表页面       
+  mui.openWindow({
+  
+    id:'showProducts.html'
+  });
+  
+ // console.log(id)
+});
+})       
+	</script>
+	</body>
+	
+</html>

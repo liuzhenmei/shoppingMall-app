@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/cart.css" />
+	</head>
+
+	<body>
+		
+		<header class="mui-bar mui-bar-nav cartHead">
+		    <a class="mui-action-back iconfont icon-right mui-pull-left" id="back"></a>
+		    <a class="mui-pull-right edit">Edit</a>
+		    <h1 class="mui-title">Shopping Cart</h1>
+		</header>
+		<div class="mui-content mui-scroll-wrapper">
+		    <div class="mui-scroll">
+		        <!--这里放置真实显示的DOM内容-->
+		        <div class="cartProducts">
+		         
+		       <div class="mui-input-row mui-checkbox mui-left itemProduct">
+		         <label>
+		         	<div class="cart_proInfo">
+		         	 <div class="cartImg"><img src="img/pic (4).png"></div>
+		         	 <div class="pInfo">
+		         	 	<div class="cPname"><a href="#">PU Leather School Bag Laptop Backpack Travel</a></div>
+		         	 	<div class="price_num">
+		         	 		<div class="cprice">$39.9</div>
+				         	 	<div class="mui-numbox" data-numbox-min='1'>
+								  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+								  <input class="mui-numbox-input" type="number" />
+								  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+								</div>
+		         	 	</div>	
+		         	 </div>
+		         </div>
+		         </label>
+		         <input name="checkbox1" type="checkbox" >
+		       </div>
+		       <div class="mui-input-row mui-checkbox mui-left itemProduct">
+		         <label>
+		         	<div class="cart_proInfo">
+		         	 <div class="cartImg"><img src="img/pic (8).png"></div>
+		         	 <div class="pInfo">
+		         	 	<div class="cPname"><a href="#">PU Leather School Bag Laptop Backpack Travel</a></div>
+		         	 	<div class="price_num">
+		         	 		<div class="cprice">$29.9</div>
+				         	 	<div class="mui-numbox" data-numbox-min='1'>
+								  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+								  <input class="mui-numbox-input" type="number" />
+								  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+								</div>
+		         	 	</div>	
+		         	 </div>
+		         </div>
+		         </label>
+		         <input name="checkbox1" type="checkbox" >
+		       </div>
+		     
+		   </div>
+		
+		</div>
+		</div>
+		   <div class="balance">
+		   	<div class="mui-input-row mui-checkbox mui-left">
+		   	  <label style="color:#616161;font-size:16px">All</label>
+		   	  <input  type="checkbox" id="selectall">
+		   	</div>
+		   	<div class="opration">
+		   		<div class="amount"><span class="total">$39.9</span><button type="button" id="checkout">Checkout</button></div>
+		   		<div class="editOpration"><button type="button" id="favorite">Favorite</button><button type="button" id="delete">Delete</button></div>
+		   		
+		   	</div>
+		   	
+		
+		   </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/mui.min.js"></script>
+		
+		<script type="text/javascript" src="js/sub.js" ></script>
+		<script>
+			
+			mui.init();
+			//设置html的字体大小
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+			 var chkall=document.getElementById("selectall"); 
+             mui.plusReady(function(){ 
+            chkall.addEventListener("change",function(){ 
+                if(this.checked){ 
+                    mui("input[name='checkbox1']").each(function(){ 
+                        this.checked=true; 
+ 
+                    }); 
+                }else{ 
+                    mui("input[name='checkbox1']").each(function(){ 
+                        this.checked=false; 
+ 
+                    }); 
+                } 
+            },false); 
+ 
+            var cbknum=mui("input[name='checkbox1']").length; 
+             var chknum=0;     
+            mui(".cartProducts").on("change","input[name='checkbox1']",function(){ 
+ 
+                if(this.checked) 
+                { 
+                    chknum++; 
+ 
+                }else{ 
+                    chknum--; 
+                } 
+                if(cbknum==chknum){ 
+ 
+                    chkall.checked=true; 
+                }else{ 
+                    chkall.checked=false; 
+ 
+                } 
+ 
+            }); 
+ 
+ 
+        }); 
+	mui.plusReady(function(){
+		//设置webview窗口的top为0
+		plus.webview.currentWebview().setStyle({top:"0"});
+        // alert(plus.webview.currentWebview().getURL())                           
+		         
+	})  
+			
+			//区域滚动初始化scroll控件
+	mui('.mui-scroll-wrapper').scroll({
+		deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		bounce: false,//滚动条是否有弹力默认是true
+	});
+	$(function(){
+		
+		
+		
+		$(".cartHead .edit").toggle(function(){
+			
+			$(".amount").hide();
+			$(".editOpration").show();
+			$(this).text("Done");
+		},function(){
+			
+			$(".amount").show();
+			$(".editOpration").hide();
+			$(this).text("Edit");
+			
+		})
+		
+		
+	})
+	mui.ready(function(){
+		
+		mui(".amount").on("tap","#checkout",function(){
+			mui.openWindow({
+				url:"placeOrder.html",
+				id:"placeOrder.html"
+			})
+
+		})
+		
+	})
+	$.fn.toggle = function( fn, fn2 ) {
+    var args = arguments,guid = fn.guid || $.guid++,i=0,
+    toggle = function( event ) {
+      var lastToggle = ( $._data( this, "lastToggle" + fn.guid ) || 0 ) % i;
+      $._data( this, "lastToggle" + fn.guid, lastToggle + 1 );
+      event.preventDefault();
+      return args[ lastToggle ].apply( this, arguments ) || false;
+    };
+    toggle.guid = guid;
+    while ( i < args.length ) {
+      args[ i++ ].guid = guid;
+    }
+    return this.click( toggle );
+  };
+		</script>
+	</body>
+
+</html>

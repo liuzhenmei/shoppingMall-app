@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/account.css" />
+	</head>
+
+	<body>
+		<div class="mui-content mui-scroll-wrapper">
+
+			<div class="mui-scroll">
+				<!--这里放置真实显示的DOM内容-->
+				<div class="accountName">
+					<div class="myInfo">
+						<span class="headPhoto"><img src="img/pic (1).png"><i class="iconfont icon-bianji1"></i></span>
+						<p>15013600886</p>
+					</div>
+				</div>
+				<div class="accountInfo">
+					<!--我的订单-->
+					<ul class="mui-table-view viewList">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="myOrders.html">
+								My Orders
+							</a>
+						</li>
+					</ul>
+					<!--有关订单状态页-->
+					<ul class="OrderStatus viewList">
+						<li class="mui-col-xs-6 mui-col-sm-6">
+							<a href="myOrders.html?status=2">
+								<span class="iconfont icon-daifukuan"><span class="mui-badge num">2</span></span> Unpaid
+							</a>
+						</li>
+						<li class="mui-col-xs-6 mui-col-sm-6">
+							<a href="myOrders.html?status=3">
+								<span class="iconfont icon-weibiaoti2fuzhi05"></span> Be shipped
+							</a>
+						</li>
+						<li class="mui-col-xs-6 mui-col-sm-6">
+							<a href="myOrders.html?status=4">
+								<span class="iconfont icon-daishouhuo"></span> Pending receipt
+							</a>
+						</li>
+						<li class="mui-col-xs-6 mui-col-sm-6">
+							<a href="myOrders.html?status=5">
+								<span class="iconfont icon-pinglun"></span> Be evaluated
+							</a>
+						</li>
+
+					</ul>
+					<!--个人中心其他页面入口-->
+					<ul class="mui-table-view otherPage viewList">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="modifyPwd.html">
+								<i class="iconfont icon-mima"></i> Change Password
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="addressList.html">
+								<i class="iconfont icon-dizhi"></i> Shipping Address Book
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="wishList.html">
+								<i class="iconfont icon-shoucang"></i> My Wishlist
+							</a>
+						</li>
+						<li class="separation_line"></li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								<i class="iconfont icon-lianxiwomen"></i> Contact Us
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								<i class="iconfont icon-guanyuwomen"></i> About Us
+							</a>
+						</li>
+					</ul>
+
+					<div class="signOut"><button type="button">Sign Out</button></div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/sub.js"></script>
+		<script type="text/javascript">
+			//设置html的字体大小
+ document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+			mui.init();
+			mui.plusReady(function(){
+		//设置webview窗口的top为0
+		plus.webview.currentWebview().setStyle({top:"0"});
+        // alert(plus.webview.currentWebview().getURL())  
+          //plus.navigator.setStatusBarStyle('light');
+         // plus.navigator.setStatusBarBackground('#FF8A00'); 
+		         
+	}) 
+	mui('.mui-scroll-wrapper').scroll({
+				deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+				bounce: false, //滚动条是否有弹力默认是true
+	});
+	
+	mui(".myInfo").on("tap",".headPhoto",function(){
+		
+		mui.openWindow({
+			url:"personalInfo.html",
+			id:"personalInfo"
+		})
+		
+		
+	})
+	mui(".viewList").on("tap","li a",function(){
+		
+		mui.openWindow({
+			url:this.href,
+			id:this.href.substring(0,this.href.indexOf(".html"))
+		})
+	})
+	
+		</script>
+	</body>
+   
+</html>

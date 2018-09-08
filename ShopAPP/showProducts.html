@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		
+		<link rel="stylesheet" href="css/product.css" />
+		
+	</head>
+
+	<body>	
+		
+		<!-- 主界面不动、菜单移动 -->
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in" >
+		  <!-- 菜单容器 -->
+		  <aside class="mui-off-canvas-right" id="offCanvasSide" style="background:#ffffff;">
+		    <div class="mui-scroll-wrapper">
+		      <div class="mui-scroll">
+		        <!-- 菜单具体展示内容 -->
+		        <div class="refineTitle">Refine  <i class="iconfont icon-shaixuan"></i></a></div>
+		        <div class="priceRange">Price:<span>$<input type="text" id="low" placeholder="Low"> - <input type="text" id="high" placeholder="High"></span></div>
+		        
+		        
+		      </div>
+		      <div class="btns" id="sureBtns"><button type="button" id="clearBtn">CLEAR</button><button type="button" id="applyBtn">APPLY</button></div>
+		    </div>
+		  </aside>
+		  <!-- 主页面容器 -->
+		  <div class="mui-inner-wrap">
+		    <!-- 主页面标题 -->
+		    <header class="mui-bar mui-bar-nav" id="header">
+		       <a class="mui-action-back iconfont icon-right mui-pull-left" id="back"></a>
+		      <div class="input_keywords">
+				<input type="text" id="keyWords" placeholder="Enter Keywords" onfocus="this.blur()">
+				<i class="iconfont icon-sousuo"></i>
+			  </div>
+			   <div class="list_style"><i class="iconfont icon-juzhenpailie"></i></div>
+		    </header>
+		    <!--筛选-->
+		    <div class="filter">
+		        <div class="menu"><a href="#popover" id="openPopover" class="mui-btn">Hot</a></div>
+				<div class="refine"><a href="#offCanvasSide">Refine<i class="iconfont icon-shaixuan"></i></a></div>
+		    </div>
+		    	        <!--回到顶部-->
+			<div class="backTotop">
+				<a href="#" class="toTop"  id="scrollToTop"><i class="iconfont icon-up-copy"></i></a>
+				<div class="myCart"><i class="iconfont icon-gouwuche"></i><span>1</span></div>
+			</div>
+		
+		    <div class="mui-content mui-scroll-wrapper" style="padding-top:103px;" id="contentScroll">
+		      <div class="mui-scroll">
+		        <!-- 主界面具体展示内容 -->
+		        
+		        <div class="productList plist">
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (1).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack Travel</a></div>
+                			<div class="price"><div>$12.9</div><div class="shopCart"><i class="iconfont icon-gouwuche"></i></div></div>
+                			</div>
+                			<div class="discount"><span>20% OFF</span></div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (2).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack Travel</a></div>
+                			<div class="price"><div>$10.9</div><div class="shopCart"><i class="iconfont icon-gouwuche"></i></div></div>
+                			</div>
+                			<div class="discount"><span>50% OFF</span></div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (7).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpacksfsdfdgdfgf</a></div>
+                			<div class="price"><div>$7.9</div><div class="shopCart"><i class="iconfont icon-gouwuche"></i></div></div>
+                			</div>
+                			<div class="discount"><span>20% OFF</span></div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (8).png"></a>
+                			<div class="name_price">
+	                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack TravelTravel</a></div>
+	                			<div class="price"><div>$28.9</div><div class="shopCart"><i class="iconfont icon-gouwuche"></i></div></div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (9).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack TravelTravel</a></div>
+                			<div class="price"><div>$5.9</div><div class="shopCart"><i class="iconfont icon-gouwuche"></i></div></div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (10).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack Travel</a></div>
+                			<div class="price"><div>$8.9</div><div class="shopCart"><i class="iconfont icon-gouwuche"></i></div></div>
+                			</div>
+                			<div class="discount"><span>20% OFF</span></div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (11).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack TravelTravel</a></div>
+                			<div class="price"><div>$15.9</div><div class="shopCart"><i class="iconfont icon-gouwuche"></i></div></div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (12).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack Travel</a></div>
+                			<div class="price"><div>$20.9</div><div class="shopCart"><i class="iconfont icon-gouwuche"></i></div></div>
+                			</div>
+                		</div>
+                	</div>
+		        
+		   
+		      </div>
+		    </div>  
+		    <div class="mui-off-canvas-backdrop"></div>
+		  </div>
+		</div>
+		
+		<div id="popover" class="mui-popover">
+			<ul class="mui-table-view" id="menus">
+				 <li class="mui-table-view-cell"><a href="#">Hot</a></li>
+				<li class="mui-table-view-cell"><a href="#">New</a></li>
+				 <li class="mui-table-view-cell"><a href="#">Flash Deals</a></li>
+				 <li class="mui-table-view-cell"><a href="#">Hottest from $1.99</a></li>
+			 </ul>
+		</div>
+		
+		
+	<script src="js/jquery.js"></script>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+<script>
+	mui.init()
+	//设置html的字体大小
+ document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+	//区域滚动初始化scroll控件
+	mui('.mui-scroll-wrapper').scroll({
+		deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		bounce: false,//滚动条是否有弹力默认是true
+	});
+	mui('.productList').on('tap','.product',function(){
+//	window.location.href=this.href;
+		mui.openWindow({
+		 			url: "detail.html",
+		 			id: "detail"
+		 		})
+		     });	
+	//回到顶部
+	mui.ready(function(){
+		document.getElementById("scrollToTop").addEventListener("tap",function(){
+			//alert("123")
+		mui('#contentScroll').scroll().scrollTo(0,103,100);//100毫秒滚动到顶
+		
+	    }); 
+	    window.addEventListener('categoryId',function(event){
+		  //获得事件参数
+				  var id = event.detail.id;
+				 // console.log(id)
+		  })
+	    mui(".backTotop").on("tap",".myCart",function(){
+	    	window.location.href="cart.html";
+	    })
+	});   
+	    
+	(function($){
+		//console.log(window.location.href)
+		$("#menus").on("tap","li a",function(){
+		  $(".menu a").text($(this).text());
+          mui('.mui-popover').popover('toggle',document.getElementById("openPopover"));
+	       
+		})
+		
+		$(".list_style").on("tap","i",function(){
+			$(this).toggleClass('icon-liebiao');
+			$(".product").toggleClass('p_item');         
+			$(".productList").toggleClass("styleSwitch");  
+		})       
+	})(jQuery)
+	 
+	  //键盘弹出时设置bottom绝对位置
+	  mui.plusReady(function(){
+	  	document.getElementById('sureBtns').style.top = (plus.display.resolutionHeight - 58) + "px"; 
+	  })
+      
+</script>
+</body>      
+
+</html>

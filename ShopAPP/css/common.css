@@ -1,0 +1,212 @@
+body{
+	font-family: arial;
+	background-color:#F5F5F5;
+}
+a:focus,li:focus{
+	outline: none;
+}
+.mui-content{
+	background-color:#F5F5F5;
+	
+}
+#header{
+	height:50px;
+	background:#ffffff;
+	padding:0 0.36rem;
+	display:flex;
+	display:-webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.input_keywords{
+	position:relative;
+}
+.input_keywords input{
+	width:5.83rem;
+	height:0.64rem;
+	margin-bottom:0;
+	background:#EFEFEF;
+	border:none;
+	font-size:15px;
+	padding-right:30px;
+	border-radius:5px;
+}
+.input_keywords i{
+	position:absolute;
+	right:0.2rem;
+	top:0.14rem;
+	color:#cccccc;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: #CCCCCC;
+ }
+input:-moz-placeholder, textarea:-moz-placeholder {
+color:#CCCCCC;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+color:#CCCCCC;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+color:#CCCCCC;
+}
+.collect i{
+	color:#515151;
+	font-size:20px;
+}
+
+
+#tabNav{
+	  background-color:#ffffff;
+	 -webkit-box-shadow: 0 0 0px rgba(235,235,235,1);
+     box-shadow: 0 0 0px rgba(235,235,235,1);
+     border-top:1px solid #EBEBEB;
+}
+.mui-bar-tab .mui-tab-item.mui-active{
+	color:#FF8A00;
+}
+.mui-bar-tab .mui-tab-item{
+	color:#808080;
+}
+#cartNum {
+	top: 0px;
+	right: 25px;
+	position: absolute;
+	z-index: 21;
+	background-color: #D80000;
+	color: #ffffff;
+}
+
+
+
+.productList {
+	-moz-column-count: 2;
+	/* Firefox */
+	-webkit-column-count: 2;
+	/* Safari and Chrome */
+	column-count: 2;
+	-moz-column-gap: 6px;
+	/* Firefox */
+	-webkit-column-gap: 6px;
+	/* Safari 和 Chrome */
+	column-gap: 6px;
+	counter-reset:product-counter;/*设置某个选择器出现次数的计数器的值*/
+	width: 100%;
+}
+
+.product {
+	padding: 0.18rem;
+	border: 1px solid #F2F2F2;
+	box-sizing: border-box;
+	-webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+	counter-increment: product-counter;/*设置某个选取器每次出现的计数器增量*/
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	margin-bottom: 0.12rem;
+	background:#ffffff;
+	position:relative;
+}
+
+a.thumbnail {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 0.25rem;
+	height:1.18rem;
+	width:40%;
+	flex-grow:0;
+	flex-shrink: 0;
+}
+
+a.thumbnail img {
+	max-height: 1.18rem;
+	max-width:100%;
+}
+
+.productName {
+	margin-bottom: 0.06rem;
+	line-height: 15px;
+	margin-top: 0;
+	overflow:hidden;
+	height:30px;
+	
+}
+
+.productName a {
+	font-size: 13px;
+	color: #808080;
+	display:block;
+	word-break: break-all;
+}
+
+.price {
+	color: #D80000;
+	font-size: 17px;
+	font-weight: bold;
+}
+/*flash Deals 模块第一个产品& recommenddations 模块产品的style*/
+
+.p_item a.thumbnail {
+	margin-right: 0;
+	height:3.03rem;
+	width:100%;
+}
+
+.p_item a.thumbnail img {
+	max-height: 3.03rem;
+	max-width: 100%;
+}
+.p_item .productName {
+	margin-top: 0.3rem;
+	margin-bottom: 0.22rem;
+}
+
+.plist {
+	margin-top: 0.12rem;
+	padding: 0 0.3rem;
+}
+.p_item {
+	flex-direction: column;
+	background: #ffffff;
+}
+/*产品名长度超过两行，超过部分用省略号代替*/
+.productName:before{
+    content:"";
+    float:left;
+    width:5px;
+    height:30px;
+}
+.productName  >*:first-child{
+    float:right;
+    width:100%;
+    margin-left:-5px;
+}
+
+.productName:after{
+    content: "...";
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    float: right;
+    position: relative;
+    top: -15px;
+    left: 100%;
+    width: 3em;
+    color: #808080;
+    font-size:13px;
+    margin-left: -3em;
+    padding-right: 5px;
+    text-align: right;
+    background-size: 100% 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white), color-stop(50%, white));
+    background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+}
+
+

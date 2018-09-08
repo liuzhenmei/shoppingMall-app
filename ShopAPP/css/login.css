@@ -1,0 +1,172 @@
+
+
+body{
+	font-family: arial;
+	background-color:#ffffff;
+}
+.mui-content{
+	background-color:#ffffff;
+	
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: #CCCCCC;
+ }
+input:-moz-placeholder, textarea:-moz-placeholder {
+color:#CCCCCC;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+color:#CCCCCC;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+color:#CCCCCC;
+}
+/*头部标题样式*/
+#back {
+	color: #333333;
+	font-size: 20px;
+	line-height:50px;
+	font-weight:bold;
+}
+
+.pageHead {
+	height: 50px;
+	border-bottom: #EBEBEB solid 1px;
+	box-shadow: none;
+	background: #ffffff;
+}
+
+.pageHead h1 {
+	font-weight: bold;
+	line-height: 50px;
+	padding-top:5px;
+}
+.tabButton{
+	padding-top:0.69rem;
+	padding-left:0.9rem;
+	padding-right:0.9rem;
+}
+.mui-segmented-control {
+
+border: 1px solid #333333;
+border-radius: 4px;
+
+}
+.mui-segmented-control .mui-control-item {
+line-height: 36px;
+color: #333333;
+border-color: #333333;
+border-left: 1px solid #333333;
+}
+.mui-segmented-control .mui-control-item.mui-active{
+	background-color: #333333;
+}
+
+#item1,#item2{
+	padding-left:0.9rem;
+	padding-right:0.9rem;
+	margin-top:1.2rem;
+}
+.mui-input-group:before,.mui-input-group:after{
+	background-color:transparent;
+}
+.mui-input-group .mui-input-row label{
+	padding:6px 15px;
+	width:22%;
+}
+.mui-input-row label i{
+	color:#8c8c8c;
+	font-size:25px;
+}
+.mui-input-row label~input{
+	width:78%;
+	font-size:15px;
+}
+.mui-input-group .mui-input-row:after{
+	background-color:#EBEBEB;
+}
+.mui-input-row{
+	margin-bottom:15px;
+}
+.mui-input-row .mui-input-password~.mui-icon-eye.mui-active{
+	color:#FF8A00;
+}
+a.forgetPwd{
+	display:block;
+	float:right;
+	font-size:14px;
+	color:#6B6B6B;
+	margin-top:0.5rem;
+}
+.forget:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.lrBtn{
+	
+	margin-top:1.6rem;
+}
+.lrBtn button{
+	color:#ffffff;
+	width:100%;
+	border-radius:5px;
+	background:#FF8A00;
+	line-height:0.85rem;
+	font-size:17px;
+	text-align:center;
+	border:none;
+	padding:0;
+}
+.mui-checkbox input[type=checkbox]:checked:before
+{
+	color:#FF8A00;
+	
+}
+.mui-checkbox label{
+	font-size:14px;
+	color:#6B6B6B;
+	line-height:20px;
+}
+.mui-checkbox input[type=checkbox]{
+	top:15px;
+}
+.mui-checkbox label a{
+	color:#333333;
+	text-decoration: underline;
+}
+/*消息框样式*/
+.mui-popup-title{
+	font-size:20px;
+	font-weight:bold;
+	color:#333333;
+}
+.mui-popup-title+.mui-popup-text{
+	font-size:16px;
+	color:#333333;
+}
+.mui-popup-input input{
+	height:33px;
+	border:1px solid #CCCCCC;
+	font-size:15px;
+}
+.mui-popup-inner:after,.mui-popup-button:after{
+	background-color:#E6E6E6;
+}
+
+
+.forgetPwd2{
+	position:fixed;
+	left:28px;
+	right:28px;
+	top:2rem;
+	z-index:999;
+	background:#ffffff;
+	padding:0.57rem 15px 0.83rem 15px;
+	border-radius:10px; 
+}
+.forgetPwd2 h4{
+	text-align:center;
+	font-size:20px;
+	margin-bottom:10px;
+	margin-top:0;
+}

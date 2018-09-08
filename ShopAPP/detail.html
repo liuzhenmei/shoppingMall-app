@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/detail.css" />
+		<script type="text/javascript" src="iconfont/iconfont.js" ></script>
+		<style>
+			.mui-slider-indicator .mui-indicator {
+				margin: 1px 5px;
+				width: 9px;
+				height: 9px;
+				background: #ffffff;
+				box-shadow: none;
+			}
+			
+			.mui-slider-indicator .mui-active.mui-indicator {
+				background: #FF8A00;
+			}
+			.icon{
+				width:18px;height:17px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--顶部操作-->
+				<div class="detailOpration">
+					<a class="mui-action-back backto"><i class="iconfont icon-right"></i></a>
+					<a href="#" class="share"><i class="iconfont icon-fenxiang"></i></a>
+					<a class="myCart"><i class="iconfont icon-gouwuche"></i><span>1</span></a>
+				</div>
+		<div class="mui-content mui-scroll-wrapper" style="padding-bottom:58px;">
+			<div class="mui-scroll">
+
+				<div id="slider" class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/bigImg.png">
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/bigImg.png">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/bigImg.png">
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/bigImg.png">
+							</a>
+						</div>
+						<!-- 第四张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/bigImg.png">
+							</a>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/bigImg.png">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+				
+				<!--收藏-->
+				<a class="collect"><i class="iconfont icon-shoucang"></i></a>
+				<div class="productInfo">
+					<div class="productName">
+						<a>PU Leather School Bag Laptop Backpack TravelPU Leather School Bag Laptop School Bag Laptop</a>
+					</div>
+					<div class="dprice"><span>$29.9</span><span>$59.9</span></div>
+					<div class="starScore">
+						<span id="star">
+						<svg class="icon" aria-hidden="true" >
+						    <use xlink:href="#icon-star-on"></use>
+						</svg>
+						<svg class="icon" aria-hidden="true" >
+						    <use xlink:href="#icon-star-on"></use>
+						</svg>
+						<svg class="icon" aria-hidden="true" >
+						    <use xlink:href="#icon-star-on"></use>
+						</svg>
+						<svg class="icon" aria-hidden="true" >
+						    <use xlink:href="#icon-star-on"></use>
+						</svg>
+						<svg class="icon" aria-hidden="true" >
+						    <use xlink:href="#icon-star-half"></use>
+						</svg>
+					   </span>
+						<span class="score">4.5</span>|
+						<span class="reviewsCount">766 Reviews</span>
+
+					</div>
+				</div>
+				<!--frequently bought together-->
+				<div class="frequently">
+					<div class="info-title">
+						<h4>Frequently Bought Together</h4>
+						<a href="#" class="more"><i class="iconfont icon-qianjin-copy"></i></a>
+					</div>
+
+					<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="height:3.24rem;">
+						<div class="mui-scroll frequentlyProducts" style="height:3.24rem;">
+							<div class="fproduct">
+								<a href="" class="thumbnails"><img src="img/pic (1).png"></a>
+								<div class="price">$19.9</div>
+							</div>
+							<div class="fproduct">
+								<a href="" class="thumbnails"><img src="img/pic (2).png"></a>
+								<div class="price">$19.9</div>
+							</div>
+							<div class="fproduct">
+								<a href="" class="thumbnails"><img src="img/pic (3).png"></a>
+								<div class="price">$19.9</div>
+							</div>
+							<div class="fproduct">
+								<a href="" class="thumbnails"><img src="img/pic (4).png"></a>
+								<div class="price">$19.9</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--description-->
+				<div class="description">
+					<div class="info-title">
+						<h4>Description</h4>
+					</div>
+					<div class="descripte_content">
+						Color: Multicolor,Material: SisalSize:SisalMouse: Length 16cm(6.30in), 1pcsSisal Cylinder: Length 13cm(5.12in),1pcsSisalBall:Length15cm(5.91in), 1pcsPlush Mouse: Length 16 / 17cm
+					</div>
+
+				</div>
+
+				<!--reviewes-->
+				<div class="reviews">
+					<div class="info-title">
+						<h4>Customer Reviews <span style="color:#AEAEAE">(10)</span></h4>
+						<a href="#" class="more"><i class="iconfont icon-qianjin-copy"></i></a>
+					</div>
+					<div class="reviewsList">
+						<div class="mui-card">
+							<!--页眉，放置标题-->
+							<div class="mui-card-header mui-card-media">
+								<img src="img/pic (1).png" />
+								<div class="mui-media-body">
+									M
+									<p>2018-08-20 20:30:15</p>
+								</div>
+								<div class="star">
+									<svg class="icon" aria-hidden="true" >
+									    <use xlink:href="#icon-star-on"></use>
+									</svg>
+									<svg class="icon" aria-hidden="true" >
+									    <use xlink:href="#icon-star-on"></use>
+									</svg>
+									<svg class="icon" aria-hidden="true" >
+									    <use xlink:href="#icon-star-on"></use>
+									</svg>
+									<svg class="icon" aria-hidden="true" >
+									    <use xlink:href="#icon-star-on"></use>
+									</svg>
+									<svg class="icon" aria-hidden="true" >
+									    <use xlink:href="#icon-star-half"></use>
+									</svg>
+								</div>
+							</div>   
+							<!--内容区-->
+							<div class="mui-card-content">
+								<p>imverey happy with these ultra small voltmeters.will recommend.</p>
+								<div class="c-img">
+									<img src="img/pic (5).png"><img src="img/pic (6).png">
+								</div>
+							</div>
+							<!--页脚，放置补充信息或支持的操作-->
+							<div class="mui-card-footer">
+								<div class="zan"><i class="iconfont icon-dianzan"></i> <span>0</span></div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				
+				 <!--Recommendations-->
+                <div class="recommend">
+                	<div class="info-title">
+                		<h4>Recommendations</h4>
+                	</div>
+                	<div class="productList plist">
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (1).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack Travel</a></div>
+                			<div class="price">$12.9</div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (2).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack Travel</a></div>
+                			<div class="price">$19.9</div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (7).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpacksfsdfdgdfgf</a></div>
+                			<div class="price">$7.9</div>
+                			</div>
+                		</div>
+                		<div class="product p_item">
+                			<a href="detail.html" class="thumbnail"><img src="img/pic (8).png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="detail.html">PU Leather School Bag Laptop Backpack TravelTravel</a></div>
+                			<div class="price">$28.9</div>
+                			</div>
+                		</div>
+                	
+                	</div>
+                </div>
+
+			</div>
+		</div>
+		<!--固定在底部的操作按钮-->
+            <div class="btns" id="sureBtns">
+            	<button type="button" id="addTocart">Add to Cart</button>
+            	<button type="button"id="buyNow">Buy Now</button>
+            	
+            </div>
+            <!--弹出框-->
+            <div id="menu-backdrop" class="mui-backdrop"></div>
+            <div class="cartInfo hidden" id="cartInfo">
+            	<div class="product">
+                			<a href="#" class="thumbnail"><img src="img/bigImg.png"></a>
+                			<div class="name_price">
+                			<div class="productName"><a href="">PU Leather School Bag Laptop Backpack Travel</a></div>
+                			<div class="price">$12.9</div>
+                		</div>
+                </div>
+                <a class="close" id="closeBox"><i class="iconfont icon-guanbi"></i></a>
+                <div class="productNum">
+                	QTY<div class="mui-numbox" data-numbox-min='1'>
+                	
+								  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+								  <input class="mui-numbox-input" type="number" />
+								  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+								</div>
+                	
+                </div>
+                <div class="ok_btn">
+                	    <button type="button" id="ok_btn">CONFIRM</button>
+                	
+                </div>
+            
+                
+            </div>
+		<script src="js/jquery.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//设置html的字体大小
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+			//获得slider插件对象
+			var gallery = mui('.mui-slider');
+				gallery.slider({
+					interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
+				});
+				//区域滚动初始化scroll控件
+				mui('.mui-scroll-wrapper').scroll({
+					deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+					bounce: false, //滚动条是否有弹力默认是true
+				});
+			mui('.productList').on('tap','.product',function(){
+              //	window.location.href=this.href;
+			mui.openWindow({
+			 			url: "detail.html",
+			 			id: "detail"
+			 		})
+			     });
+			var menuWrapper = document.getElementById("cartInfo");
+			
+			var menuWrapperClassList = menuWrapper.classList;
+			var backdrop = document.getElementById("menu-backdrop");
+			var closeMenu=document.getElementById("closeBox");
+		
+		    closeMenu.addEventListener('tap', toggleMenu);
+			backdrop.addEventListener('tap', toggleMenu);
+			document.getElementById("addTocart").addEventListener('tap', toggleMenu);
+			document.getElementById("buyNow").addEventListener('tap',toggleMenu)
+			
+			var busying = false;
+
+			function toggleMenu(e) {
+				if (busying) {
+					return;
+				}
+				busying = true;
+				if (menuWrapperClassList.contains('mui-active')) {
+					
+					menuWrapper.className = 'cartInfo fade-out-up animated';
+				
+					
+					setTimeout(function() {
+						backdrop.style.opacity = 0;
+						backdrop.style.display="none";
+						menuWrapper.classList.add('hidden');
+					}, 500);
+				} else {
+					menuWrapper.className = 'cartInfo fade-in-down animated mui-active';
+					backdrop.style.opacity = 1;
+					backdrop.style.display="block";
+
+				}
+				setTimeout(function() {
+					busying = false;
+				}, 500);
+			}
+			mui(".reviews").on("tap",".info-title",function(){
+				
+				mui.openWindow({   
+					url:"reviews.html",
+					id:"reviews"
+				})
+				
+			})
+		</script>
+	</body>
+
+</html>

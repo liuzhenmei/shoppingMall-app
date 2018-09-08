@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/cart.css" />
+		<style>
+
+			.order_itemProduct .cart_proInfo {
+				background: #FAFAFA;
+				border-bottom:none;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav cartHead">
+			<a class="mui-action-back iconfont icon-right mui-pull-left" id="back" style="display:block"></a>
+			<h1 class="mui-title">My Orders</h1>
+		</header>
+		<div class="mui-content" style="padding-bottom:0;">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active" href="#item1mobile" >
+						All
+					   </a>
+						<a class="mui-control-item" href="#item2mobile" status="2">
+							Unpaid
+						</a>
+						<a class="mui-control-item" href="#item3mobile" status="3">
+							Be shipped
+						</a>
+						<a class="mui-control-item" href="#item4mobile" status="4">
+							Pending receipt
+						</a>
+						<a class="mui-control-item" href="#item5mobile" status="5">
+							Be evaluated
+						</a>
+					</div>
+					
+				</div>
+                 
+			<!--	<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>-->
+                  <div class="separation_line" style="border-top: 1px solid #EBEBEB;"></div>
+				<div class="mui-slider-group">
+					
+					<!--所有订单-->
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="order_itemProduct">
+									<!--待付款-->
+									<div class="order">
+										<div class="order_status">Unpaid</div>
+										<div class="orderProducts">
+											<div class="cart_proInfo">
+												<div class="cartImg"><img src="img/pic (4).png"></div>
+												<div class="pInfo">
+													<div class="cPname">
+														<a href="#">PU Leather School Bag Laptop Backpack Travel</a>
+													</div>
+													<div class="price_num">
+														<div class="cprice">$26.88<span>X1</span></div>
+													</div>
+												</div>
+											</div>
+											<div class="cart_proInfo">
+												<div class="cartImg"><img src="img/pic (3).png"></div>
+												<div class="pInfo">
+													<div class="cPname">
+														<a href="#">PU Leather School Bag Laptop Backpack Travel</a>
+													</div>
+													<div class="price_num">
+														<div class="cprice">$26.88<span>X1</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="total_pay">
+											<span class="t1">Total <span class="t2">2</span> item</span>
+											<span>Pay: <span class="t2">$53.76</span></span>
+										</div>
+										<div class="oprationBtn"><a class="btn1">Cancel</a><a href="orderDetails.html" class="btn2">Payment</a></div>
+									</div>
+                                 <!--待发货-->
+                                 <div class="order">
+										<div class="order_status">Pending Shipment</div>
+										<div class="orderProducts">
+										<div class="cart_proInfo">
+											<div class="cartImg"><img src="img/pic (4).png"></div>
+											<div class="pInfo">
+												<div class="cPname">
+													<a href="#">PU Leather School Bag Laptop Backpack Travel</a>
+												</div>
+												<div class="price_num">
+													<div class="cprice">$26.88<span>X1</span></div>
+												</div>
+											</div>
+										</div>
+										</div>
+										<div class="total_pay">
+											<span class="t1">Total <span class="t2">1</span> item</span>
+											<span>Pay: <span class="t2">$26.88</span></span>
+										</div>
+										<div class="oprationBtn"><a href="#" class="btn2">Order details</a></div>
+									</div>
+									<!--待收货-->
+									<div class="order">
+										<div class="order_status">Pending Receipt</div>
+										<div class="orderProducts">
+										<div class="cart_proInfo">
+											<div class="cartImg"><img src="img/pic (4).png"></div>
+											<div class="pInfo">
+												<div class="cPname">
+													<a href="#">PU Leather School Bag Laptop Backpack Travel</a>
+												</div>
+												<div class="price_num">
+													<div class="cprice">$39.9<span>X1</span></div>
+												</div>
+											</div>
+										</div>
+										</div>
+										<div class="total_pay">
+											<span class="t1">Total <span class="t2">1</span> item</span>
+											<span>Pay: <span class="t2">$26.88</span></span>
+										</div>
+										<div class="oprationBtn">
+											<a class="btn1">View Logistics</a><a href="#" class="btn2">Confirm Receipt</a></div>
+									</div>
+									<!--去评价-->
+									<div class="order">
+										<div class="order_status">To Evaluate</div>
+										<div class="orderProducts">
+										<div class="cart_proInfo">
+											<div class="cartImg"><img src="img/pic (4).png"></div>
+											<div class="pInfo">
+												<div class="cPname">
+													<a href="#">PU Leather School Bag Laptop Backpack Travel</a>
+												</div>
+												<div class="price_num">
+													<div class="cprice">$26.88<span>X1</span></div>
+												</div>
+											</div>
+										</div>
+										</div>
+										<div class="total_pay">
+											<span class="t1">Total <span class="t2">1</span> item</span>
+											<span>Pay: <span class="t2">$26.88</span></span>
+										</div>
+										<div class="oprationBtn">
+											<a class="btn1">View Logistics</a><a href="#" class="btn2">To Evaluate</a></div>
+									</div>
+									<!--已完成-->
+									<div class="order">
+										<div class="order_status">Completed</div>
+										<div class="orderProducts">
+										<div class="cart_proInfo">
+											<div class="cartImg"><img src="img/pic (4).png"></div>
+											<div class="pInfo">
+												<div class="cPname">
+													<a href="#">PU Leather School Bag Laptop Backpack Travel</a>
+												</div>
+												<div class="price_num">
+													<div class="cprice">$26.88<span>X1</span></div>
+												</div>
+											</div>
+										</div>
+										</div>
+										<div class="total_pay">
+											<span class="t1">Total <span class="t2">1</span> item</span>
+											<span>Pay: <span class="t2">$26.88</span></span>
+										</div>
+										<div class="oprationBtn">
+											<a class="btn1">Cancel</a><a href="#" class="btn2">Buy Again</a></div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--待付款-->
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--待发货-->
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll3" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--待收货-->
+					<div id="item4mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll4" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--待评价-->
+					<div id="item5mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll5" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script src="js/mui.min.js"></script>
+
+		<script type="text/javascript">
+			mui.init()
+			//设置html的字体大小
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+			
+			function GetQueryString(name)
+				{
+				     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+				     var r = window.location.search.substr(1).match(reg);
+				     if(r!=null)return  unescape(r[2]); return null;
+				}
+				
+				var html2 = '<div class="order_itemProduct"><div class="order"><div class="order_status">Unpaid</div><div class="orderProducts"><div class="cart_proInfo"><div class="cartImg"><img src="img/pic (4).png"></div><div class="pInfo"><div class="cPname"><a href="#">PU Leather School Bag Laptop Backpack Travel</a></div><div class="price_num"><div class="cprice">$26.88<span>X1</span></div></div></div></div></div><div class="total_pay"><span class="t1">Total <span class="t2">1</span> item</span><span>Pay: <span class="t2">$26.88</span></span></div><div class="oprationBtn"><a class="btn1">Cancel</a><a href="#" class="btn2">Payment</a></div></div></div>';
+				
+				var html3 = '<div class="order_itemProduct"><div class="order"><div class="order_status">Pending Shipment </div><div class="orderProducts"><div class="cart_proInfo"><div class="cartImg"><img src="img/pic (4).png"></div><div class="pInfo"><div class="cPname"><a href="#">PU Leather School Bag Laptop Backpack Travel</a></div><div class="price_num"><div class="cprice">$26.88<span>X1</span></div></div></div></div></div><div class="total_pay"><span class="t1">Total <span class="t2">1</span> item</span><span>Pay: <span class="t2">$26.88</span></span></div><div class="oprationBtn"><a href="#" class="btn2">Order details</a></div></div></div>';
+				
+				var html4 = '<div class="order_itemProduct"><div class="order"><div class="order_status">Pending Receipt</div><div class="orderProducts"><div class="cart_proInfo"><div class="cartImg"><img src="img/pic (4).png"></div><div class="pInfo"><div class="cPname"><a href="#">PU Leather School Bag Laptop Backpack Travel</a></div><div class="price_num"><div class="cprice">$26.88<span>X1</span></div></div></div></div></div><div class="total_pay"><span class="t1">Total <span class="t2">1</span> item</span><span>Pay: <span class="t2">$26.88</span></span></div><div class="oprationBtn"><a class="btn1">View Logistics</a><a href="#" class="btn2">Confirm Receipt</a></div></div></div>';
+				
+				var html5='<div class="order_itemProduct"><div class="order"><div class="order_status">To Evaluate</div><div class="orderProducts"><div class="cart_proInfo"><div class="cartImg"><img src="img/pic (4).png"></div><div class="pInfo"><div class="cPname"><a href="#">PU Leather School Bag Laptop Backpack Travel</a></div><div class="price_num"><div class="cprice">$26.88<span>X1</span></div></div></div></div></div><div class="total_pay"><span class="t1">Total <span class="t2">1</span> item</span><span>Pay: <span class="t2">$26.88</span></span></div><div class="oprationBtn"><a class="btn1">View Logistics</a><a href="#" class="btn2">To Evaluate</a></div></div></div>';
+				
+				var item2 = document.getElementById('item2mobile');
+				var item3 = document.getElementById('item3mobile');
+				var item4 = document.getElementById('item4mobile');
+				var item5 = document.getElementById('item5mobile');
+			$(function() {
+				$(".mui-control-content").css("min-height", window.screen.availHeight - 130.5 + "px")
+				//console.log(window.screen.availHeight)
+				var status=GetQueryString("status");
+				console.log(status);
+				
+				if(status!=null&&status!=""){
+					//var width=window.screen.availWidth;
+						$('.mui-control-item[status="'+status+'"]').addClass("mui-active").siblings().removeClass("mui-active");
+						$("#item"+status+"mobile").addClass("mui-active").siblings().removeClass("mui-active");
+						//var items="item"+status;
+                          if($("#item"+status+"mobile").find('.mui-loading')) {
+                       	       if(status==2){
+                       	       		setTimeout(function() {
+									$("#item2mobile").find(".mui-scroll").html(html2);
+								}, 500);
+                       	       	
+                       	       }
+                       	       else if(status==3){
+                       	       		setTimeout(function() {
+									$("#item3mobile").find(".mui-scroll").html(html3);
+								}, 500);
+                       	       	
+                       	       }
+	                       	  else if(status==4){
+                       	       		setTimeout(function() {
+									$("#item4mobile").find(".mui-scroll").html(html4);
+								}, 500);
+                       	       	
+                       	       }else{
+                       	       	setTimeout(function() {
+									$("#item5mobile").find(".mui-scroll").html(html5);
+								}, 500);
+                       	       }
+						  }
+					
+				}
+
+			})
+
+			mui.init({
+				swipeBack: false
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				
+				document.getElementById('slider').addEventListener('slide', function(e) {
+					if(e.detail.slideNumber === 1) {
+						if(item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.mui-scroll').innerHTML = html2;
+							}, 500);
+						}
+					} else if(e.detail.slideNumber === 2) {
+						if(item3.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item3.querySelector('.mui-scroll').innerHTML = html3;
+							}, 500);
+						}
+					} else if(e.detail.slideNumber === 3){
+						if(item4.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item4.querySelector('.mui-scroll').innerHTML = html4;
+							}, 500);
+						}
+
+					}else{
+						if(item5.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item5.querySelector('.mui-scroll').innerHTML = html5;
+							}, 500);
+						}
+						
+					}
+				});
+				//				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				//				$('.mui-input-group').on('change', 'input', function() {
+				//					if (this.checked) {
+				//						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+				//						//force repaint
+				//						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+				//					}
+				//				});
+			})(mui);
+			mui(".oprationBtn").on("tap","a",function(){
+		
+		mui.openWindow({
+			url:this.href,
+			id:this.href.substring(0,this.href.indexOf(".html"))
+		})
+	})
+		</script>
+	</body>
+
+</html>

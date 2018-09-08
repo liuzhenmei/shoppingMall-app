@@ -1,0 +1,206 @@
+.ourItem,
+.advertisingBanner {
+	margin-top: 12.5px;
+}
+
+#ourItems {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: #ffffff;
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+	padding-top: 18px;
+	padding-bottom: 8px;
+}
+
+#ourItems li {
+	border: none;
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+
+#ourItems li a {
+	padding: 0;
+}
+
+#ourItems li a span {
+	width: 1.04rem;
+	height: 1.04rem;
+	border-radius: 50%;
+	line-height: 1.04rem;
+	font-size: 35px;
+	color: #ffffff;
+}
+@media(max-width:325px){
+	#ourItems li a span{
+		font-size:25px;
+	}
+}
+span#hot {
+	background: -webkit-linear-gradient(#FF7372, #FF2A36);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#FF7372, #FF2A36);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#FF7372, #FF2A36);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#FF7372, #FF2A36);
+	/* 标准的语法 */
+}
+
+span#new {
+	background: -webkit-linear-gradient(#48CD45, #2DAF55);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#48CD45, #2DAF55);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#48CD45, #2DAF55);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#48CD45, #2DAF55);
+	/* 标准的语法 */
+}
+
+span#flash {
+	background: -webkit-linear-gradient(#FF6FAE, #F9136E);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#FF6FAE, #F9136E);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#FF6FAE, #F9136E);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#FF6FAE, #F9136E);
+	/* 标准的语法 */
+}
+
+span#promotion {
+	background: -webkit-linear-gradient(#FAC04E, #FF6347);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#FAC04E, #FF6347);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#FAC04E, #FF6347);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#FAC04E, #FF6347);
+	/* 标准的语法 */
+}
+
+span#luggage {
+	background: -webkit-linear-gradient(#FDCE5B, #C59E40);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#FDCE5B, #C59E40);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#FDCE5B, #C59E40);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#FDCE5B, #C59E40);
+	/* 标准的语法 */
+}
+
+span#toy {
+	background: -webkit-linear-gradient(#CB94F4, #A95CE2);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#CB94F4, #A95CE2);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#CB94F4, #A95CE2);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#CB94F4, #A95CE2);
+	/* 标准的语法 */
+}
+
+span#festival {
+	background: -webkit-linear-gradient(#FFBA38, #FF9400);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#FFBA38, #FF9400);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#FFBA38, #FF9400);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#FFBA38, #FF9400);
+	/* 标准的语法 */
+}
+
+span#outdoor {
+	background: -webkit-linear-gradient(#5DC3FF, #1594EE);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#5DC3FF, #1594EE));
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#5DC3FF, #1594EE));
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(#5DC3FF, #1594EE));
+	/* 标准的语法 */
+}
+
+#ourItems .mui-table-view-cell .mui-media-body {
+	color: #666666;
+	height: 18px;
+	font-size: 13px;
+}
+
+.advertisingBanner a {
+	display: block;
+	line-height: 0;
+}
+
+.advertisingBanner a img {
+	max-width: 100%;
+}
+
+.flashDeals {
+	margin-top: 12.5px;
+	background: #ffffff;
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+	padding: 0 15px;
+	padding-bottom:0.22rem;
+}
+
+.plate-title {
+	display: flex;
+	display: -webkit-flex;
+	height: 1.06rem;
+	justify-content: space-between;
+	align-items: center;
+	background: #ffffff;
+}
+
+.plate-title h4 {
+	margin: 0;
+	font-size: 16px;
+}
+.plate-title a.more{
+	color:#575757;
+	font-size:14px;
+}
+
+/*flash Deals 模块第一个产品& recommenddations 模块产品的style*/
+.productList>div:nth-child(1) {
+	flex-direction: column;
+}
+
+.productList>div:nth-child(1) a.thumbnail {
+	margin-right: 0;
+	height:3.03rem;
+	width:100%;
+}
+
+.productList>div:nth-child(1) a.thumbnail img {
+	max-height: 3.03rem;
+	max-width: 100%;
+}
+
+.productList>div:nth-child(1) .name_price .productName{
+	margin-top: 0.3rem;
+	margin-bottom: 0.22rem;
+}
+
+/*Recommendations*/
+.recommend {
+	margin-top: 12.5px;
+}
+
+.recommend .plate-title {
+	padding: 0 15px;
+	border-top:1px solid #EBEBEB;
+	border-bottom:1px solid #EBEBEB;
+}
+
+.recommend .plate-title a.moreList {
+	color: #595959;
+}
+
+

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/account.css" />
+		<style>
+			
+			body{
+				font-family: arial;
+				background-color:#ffffff;
+			}
+			
+			.mui-content{
+				background-color:#ffffff;
+				
+			}
+			a.saveChange{
+			display:block;
+			font-size:17px;
+			color:#137AE1;
+			line-height:50px;
+			
+		}
+		.change{
+			padding:15px;
+		}
+		.change input{
+			border:none;
+			border-bottom:1px solid #EBEBEB;
+		}
+		</style>
+		
+		
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav pageHead">
+		    <a class="mui-action-back iconfont icon-right mui-pull-left" id="backs"></a>
+		    <a class="mui-pull-right saveChange">Save</a>
+		    <h1 class="mui-title"></h1>
+		</header>
+		<div class="mui-content">
+			<div class="separation_line"></div>
+		    <div class="change">
+		    	<input type="text" value="M" id="inputVal">
+		    </div>
+		</div>
+		
+		
+		
+		
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui.plusReady(function () {
+			   var self = plus.webview.currentWebview();
+			   // 或 var self = plus.webview.getWebviewById('new');
+			  // console.log("extras:" + self.titleName);
+			 document.getElementsByClassName("mui-title")[0].innerHTML=self.titleName;
+			 document.getElementById("inputVal").value=self.content;
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,489 @@
+.detailOpration {
+	padding: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+}
+
+.detailOpration a {
+	width: 0.86rem;
+	height: 0.86rem;
+	background: rgba(51, 51, 51, 0.25);
+	border-radius: 50%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.detailOpration a i {
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.backto {
+	float: left;
+}
+
+.myCart,
+.share {
+	float: right;
+	position: relative;
+}
+
+.myCart {
+	margin-right: 12px;
+}
+
+.myCart span {
+	width: 20px;
+	line-height: 20px;
+	background: #D80000;
+	border-radius: 50%;
+	color: #ffffff;
+	position: absolute;
+	top: 0;
+	right: -2px;
+	font-size: 14px;
+	text-align: center;
+}
+
+a.collect {
+	width: 1.04rem;
+	height: 1.04rem;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #ffffff;
+	position: absolute;
+	top: 5rem;
+	right: 25px;
+	z-index: 20;
+	border-radius: 50%;
+}
+
+a.collect i {
+	font-size: 25px;
+	color: #4d4d4d;
+}
+.productInfo{
+	background:#ffffff;
+	padding:15px;
+}
+.productInfo .productName{
+	line-height:25px;
+	height:50px;
+	
+}
+.productInfo .productName a{
+	font-size:18px;
+	color:#2E2E2E;
+}
+.productInfo .productName:before{
+	height:50px;
+	}
+.productInfo .productName:after{
+	top:-25px;
+}
+.dprice{
+	margin-top:16px;
+}
+.dprice span:first-child{
+	color:#D80000;
+	font-size:21px;
+}
+.dprice span:last-child{
+	color:#B3B3B3;
+	font-size:16px;
+	text-decoration: line-through;
+	margin-left:15px;
+}
+.starScore{
+	margin-top:18px;
+	color:#DADADA;
+	font-size:15px;
+}
+.score{
+	color:#808080;
+	
+	margin:0 10px;
+}
+.reviewsCount{
+	color:#137AE1;
+	margin-left:10px;
+}
+.frequently,.description,.reviews{
+	margin-top:12.5px;
+	background: #ffffff;
+	
+}
+.info-title {
+	display: flex;
+	display: -webkit-flex;
+	height: 1.06rem;
+	justify-content: space-between;
+	align-items: center;
+	background:#ffffff;
+	border-bottom:#EBEBEB solid 1px;
+	
+	padding:0 15px;
+}
+
+.info-title h4 {
+	margin: 0;
+	font-size: 19px;
+	color:#333333;
+}
+.info-title a.more{
+	color:#999999;
+	
+}
+.info-title a.more i{
+	font-size:18px;
+}
+.frequentlyProducts{
+	
+}
+.frequentlyProducts:after{
+	content:'';
+	clear:both;
+	display:block;
+}
+.fproduct{
+	display:inline-block;
+	padding:0 15px;
+	width:2.4rem;
+	margin:19px 0;
+}
+.fproduct .price{
+	font-weight:bold;
+	text-align:left;
+}
+a.thumbnails {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height:1.82rem;
+	margin-bottom:12px;
+}
+
+a.thumbnails img {
+	max-height: 1.82rem;
+	max-width:100%;
+}
+
+.descripte_content{
+	padding:25px 15px;
+	color:#858585;
+	font-size:16px;
+	line-height:24px;
+	
+}
+.mui-card {
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    margin:0;
+    padding:15px;
+    padding-bottom:0;
+    border-radius: 0;
+    background-color: #fff;
+    background-clip: padding-box;
+    box-shadow:none;
+    border-bottom:1px solid #EBEBEB;
+}
+.mui-card-header{
+	
+}
+.star{
+	position:absolute;
+	right:0;
+	top:10px;
+}
+.mui-card-header>img:first-child{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+}
+.mui-card-header.mui-card-media .mui-media-body p{
+	color:#CCCCCC;
+	font-size:14px;
+}
+.mui-card-header.mui-card-media .mui-media-body{
+	line-height:20px;
+	margin-left:50px;
+}
+.mui-card-header.mui-card-media,.mui-card-footer, .mui-card-header{
+	padding:0;
+}
+.mui-card-footer:before, .mui-card-header:after{
+	background-color:#ffffff;
+}
+.mui-card-content{
+	padding-top:15px;
+}
+.mui-card-content p{
+	color:#333333;
+	font-size:16px;
+}
+.mui-card-content .c-img img{
+	max-height:70px;
+	max-width:70px;
+	margin-right:10px;
+}
+.zan{
+	position:absolute;
+	right:0;
+	top:35%;
+}
+.zan span{
+	color:#A1A1A1;
+	font-size:16px;
+}
+.zan i{
+	font-size:20px;
+	color:#A1A1A1;
+}
+
+.btns{
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:20
+	
+}
+.btns button{
+	width:50%;
+	height:58px;
+	text-align:center;
+	border:none;
+	border-radius:0;
+	font-size:19px;
+	color:#ffffff;
+	font-size:22px;
+	float:left;   
+}
+button#addTocart{
+	background:#FFB621;
+
+	
+}
+button#buyNow{
+	background:#FF8A00;
+	
+	
+
+}
+
+.mui-backdrop {
+				display: none;
+			}
+.cartInfo{
+	background:#ffffff;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:999;
+	
+}
+.cartInfo.hidden {
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	z-index: -1;
+			}
+.cartInfo.mui-active{
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.cartInfo .product{
+
+	border:none;
+	padding:20px 1.5rem 28px 15px;
+	border-bottom:1px solid #EBEBEB;
+	
+}
+.cartInfo .product a.thumbnail{
+	height:2.35rem;
+	width:2.35rem;
+	position:absolute;
+	top:-22px;
+}
+.cartInfo .product a.thumbnail img{
+	max-height:2.35rem;
+	max-width:100%;
+}
+.cartInfo .product .name_price{
+	margin-left:2.6rem;
+}
+.cartInfo .product .price{
+	margin-top:20px;
+	font-size:19px;
+	font-weight:bold;
+}
+a.close{
+	position:absolute;
+	top:20px;
+	right:15px;
+	
+}
+a.close i{
+	color:#999999;
+	font-size:20px;
+}
+.productNum{
+	padding:0.58rem 15px;
+	color:#999999;
+}
+
+.mui-numbox {
+padding: 0 35px;
+    width: 2.28rem;
+    height: 35px;
+    border: solid 1px #D9D9D9;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-left:25px;
+}
+.mui-numbox .mui-btn-numbox-minus, .mui-numbox .mui-numbox-btn-minus{
+	border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.mui-numbox [class*=btn-numbox], .mui-numbox [class*=numbox-btn] {
+   
+    width: 35px;
+    height: 100%;
+  
+    background-color: #ffffff;
+}
+
+.ok_btn{
+	padding:0 15px 15px 15px;
+	
+}
+.ok_btn button{
+	width:100%;
+	height:40px;
+	text-align:center;
+	border:none;
+	border-radius:0;
+	font-size:19px;
+	color:#ffffff;
+	font-size:22px;
+	background:#FF8A00;
+	border-radius:5px;
+}
+.animated {
+				-webkit-animation-duration: 0.5s;
+				animation-duration: 0.5s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+			
+			@-webkit-keyframes fadeInDown {
+				0%, 60%, 75%, 90%, 100% {
+					-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+					transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+				}
+				0% {
+					opacity: 0;
+					-webkit-transform: translate3d(0, 100%, 0);
+					transform: translate3d(0, 100%, 0);
+				}
+				60% {
+					opacity: 1;
+					-webkit-transform: translate3d(0, 0px, 0);
+					transform: translate3d(0, 0px, 0);
+				}
+				75% {
+					-webkit-transform: translate3d(0, 0px, 0);
+					transform: translate3d(0, 0px, 0);
+				}
+				90% {
+					-webkit-transform: translate3d(0, 0px, 0);
+					transform: translate3d(0, 0px, 0);
+				}
+				100% {
+					-webkit-transform: none;
+					transform: none;
+				}
+			}
+			@keyframes fadeInDown {
+				0%, 60%, 75%, 90%, 100% {
+					-webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+					transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+				}
+				0% {
+					opacity: 0;
+					-webkit-transform: translate3d(0, 100%, 0);
+					transform: translate3d(0, 100%, 0);
+				}
+				60% {
+					opacity: 1;
+					-webkit-transform: translate3d(0, 0px, 0);
+					transform: translate3d(0, 0px, 0);
+				}
+				75% {
+					-webkit-transform: translate3d(0, 0px, 0);
+					transform: translate3d(0, 0px, 0);
+				}
+				90% {
+					-webkit-transform: translate3d(0, 0px, 0);
+					transform: translate3d(0, 0px, 0);
+				}
+				100% {
+					-webkit-transform: none;
+					transform: none;
+				}
+			}
+			.fade-in-down {
+				-webkit-animation-name: fadeInDown;
+				animation-name: fadeInDown;
+			}
+		
+			@-webkit-keyframes fadeOutUp {
+				20% {
+					-webkit-transform: translate3d(0, 0px, 0);
+					transform: translate3d(0, 0px, 0);
+				}
+				40%,
+				45% {
+					opacity: 1;
+					-webkit-transform: translate3d(0, 0px, 0);
+					transform: translate3d(0, 0px, 0);
+				}
+				100% {
+					opacity: 0;
+					-webkit-transform: translate3d(0, 100%, 0);
+					transform: translate3d(0, 100%, 0);
+				}
+			}
+			@keyframes fadeOutUp {
+				20% {
+					-webkit-transform: translate3d(0, 0px, 0);
+					transform: translate3d(0, 0px, 0);
+				}
+				40%,
+				45% {
+					opacity: 1;
+					-webkit-transform: translate3d(0, 0px, 0);
+					transform: translate3d(0, 0px, 0);
+				}
+				100% {
+					opacity: 0;
+					-webkit-transform: translate3d(0, 100%, 0);
+					transform: translate3d(0, 100%, 0);
+				}
+			}
+			.fade-out-up {
+				-webkit-animation-name: fadeOutUp;
+				animation-name: fadeOutUp;
+			}
